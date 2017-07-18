@@ -1,0 +1,88 @@
+.st-pro-image{float: left; margin: 0 10px 10px 0; }
+.st-pro-testimonial{margin: 15px 0; overflow: hidden;}
+.st-pro-author{font-style: italic; margin-left: .8em}
+.st-pro-extra{margin-left: 1.6em;}
+
+/* Rotating */
+.st-pro-ticker{list-style: none; margin: 0; padding: 0}
+.st-pro-ticker li{display: none; }
+.st-pro-ticker li:first-child{display: block; }
+
+/* Popup form */
+.st-form{max-width: 500px; margin: 20px auto; padding: 10px 30px 20px; background: #fff; position: relative; }
+
+/* Slider */
+.st-pro-slider-wrapper {
+	position: relative;
+	padding: 0 45px;
+}
+
+.st-pro-slider {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.st-pro-slider li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.st-pro-slider li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.st-pro-slider-wrapper .st_slider_nav{
+	position: absolute;
+	top: 50%;
+	z-index: 99;
+	text-decoration: none;
+    opacity: 1;
+    border-radius: 4px;
+    height: 38px;
+    margin-top: -20px;
+    width: 38px;
+    background:rgba(0,0,0,.92);
+}
+.st-pro-slider-wrapper .st_slider_nav.prev:hover, .st-pro-slider-wrapper .st_slider_nav.next:hover {
+        text-decoration: none;
+        color: #000;
+        background: #FFF;
+}
+.st-pro-slider-wrapper .st_slider_nav.prev{
+	color: #FFF;
+	transition: background 0.35s ease-in-out 0s;
+	left: 0px;
+}
+	.st-pro-slider-wrapper .st_slider_nav.prev::after{
+		transition: background 0.35s ease-in-out 0s;
+        content: "\f053";
+        font-family: FontAwesome;
+        font-size: 16px;
+        display: block;
+        margin-top: 10px;
+        margin-left: 12px;
+	}
+.st-pro-slider-wrapper .st_slider_nav.next{
+	color: #FFF;
+	transition: background 0.35s ease-in-out 0s;
+	right: 0px;
+}
+	.st-pro-slider-wrapper .st_slider_nav.next::before{
+		transition: background 0.35s ease-in-out 0s;
+        content: "\f054";
+        font-family: FontAwesome;
+        font-size: 16px;
+        display: block;
+        margin-top: 10px;
+        margin-left: 14px;
+	}
