@@ -11,7 +11,7 @@ class TestimonialList extends DatabaseItemList{
 	protected $queryStringPagingVariable = 'pg';
 	
 	function __construct(){
-		$this->setQuery('select distinct id from StudioTestimonialsPro');
+		$this->setQuery('select id from StudioTestimonialsPro');
 	}
 	
 	public function get($itemsToGet = 0, $offset = 0){

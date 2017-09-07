@@ -11,7 +11,7 @@ class Controller extends Package {
 
 	protected $pkgHandle = 'studio_testimonials_pro';
 	protected $appVersionRequired = '5.7.0.4';
-	protected $pkgVersion = '1.0.4';
+	protected $pkgVersion = '1.0.5';
 	
 	public function getPackageDescription() {
 		return t("Manage and display testmonials.");

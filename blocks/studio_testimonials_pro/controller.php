@@ -15,18 +15,18 @@ class Controller extends BlockController {
 		protected $btInterfaceHeight = "500";
 		protected $btWrapperClass = 'ccm-ui';	
 
-    	public function registerViewAssets()
+    	public function registerViewAssets($outputContent = '')
     	{
     		if($this->display_type == 'slider'){
         		$this->requireAsset('css', 'font-awesome');
     		}
+			if($this->enable_submit){
+        		$this->requireAsset('core/lightbox');
+        	}
         }
 		
 		public function view(){
 			if($this->enable_submit){
-				$html = Loader::helper('html');
-				$this->addHeaderItem($html->css('jquery-magnific-popup.css'));
-				$this->addFooterItem($html->javascript('jquery-magnific-popup.js'));
 				$this->addFooterItem('
 				<script>
 				$(function(){
